@@ -66,6 +66,15 @@ F. Boolean(2) is true so both sides are boolean and true. Outputs true.
 
 '===' checks for both type and value equality; no operand is casted.
 
-16. 
+17. It will output '[2, 4, 6]'.
+
+Explanation: 
+newArr is instantiated, and the method loops over elements in [1,2,3].
+
+For each element, it calls callback(element) which calls doSomething(num), which multiplies that number by 2. Then, the number is pushed into newArr. So newArr is returned with those values.
+
+18. The output is "1 4 3 2", with a newline after each number (due to separate console logs).
+
+Explanation: The program immediately logs 1, then schedules 2 after 1 second. Before it prints 2, it schedules 3 at the next turn of the event loop, and immediately prints 4. So the output is "1 4", and then 3 is printed before one second elapses, and finally 2 is logged.
 
 
